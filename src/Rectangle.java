@@ -1,6 +1,8 @@
 public class Rectangle extends GeometryObjects{
     double a;
     double b;
+
+    double area = GetArea();
     public Rectangle(double a, double b) {
         this.a = a;
         this.b = b;
@@ -14,10 +16,13 @@ public class Rectangle extends GeometryObjects{
     public double GetArea() {
         return a*b;
     }
+
     @Override
     public String toString() {
         return "Rectangle{" +
-                "area=" + GetArea() +
+                "a=" + a +
+                ", b=" + b +
+                ", area=" + area +
                 '}';
     }
 }

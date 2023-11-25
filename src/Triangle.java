@@ -3,6 +3,8 @@ public class Triangle extends GeometryObjects {
     double b;
     double c;
 
+    double area = GetArea();
+
     public Triangle(double a, double b, double c) {
         this.a = a;
         this.b = b;
@@ -25,7 +27,10 @@ public class Triangle extends GeometryObjects {
     @Override
     public String toString() {
         return "Triangle{" +
-                "area=" + GetArea() +
+                "a=" + a +
+                ", b=" + b +
+                ", c=" + c +
+                ", area=" + area +
                 '}';
     }
 }

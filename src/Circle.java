@@ -1,6 +1,8 @@
 public class Circle extends GeometryObjects{
     double r;
 
+    double area = GetArea();
+
     public Circle(double r) {
         this.r = r;
     }
@@ -13,10 +15,12 @@ public class Circle extends GeometryObjects{
     public double GetArea() {
         return Math.PI * r * r;
     }
+
     @Override
     public String toString() {
         return "Circle{" +
-                "area=" + GetArea() +
+                "r=" + r +
+                ", area=" + area +
                 '}';
     }
 }
